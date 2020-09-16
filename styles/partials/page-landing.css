@@ -81,7 +81,7 @@
     margin-left: 0.8rem;
 }
 
-@media (max-width: 699) {
+@media (max-width: 699px) {
     :root {
         font-size: 40%;
     }
@@ -113,7 +113,7 @@
 
     .hero-image {
         grid-area: image;
-        height: 350px
+        height: 350px;
     }
 
     .buttons-container {
