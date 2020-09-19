@@ -42,13 +42,9 @@
     transition: 0.2s;
 }
 
-#page-give-classes fieldset .delete-item-wrapper {
+#page-give-classes fieldset .input-block-delete {
     padding-top: 1rem;
     width: 100%;
-}
-
-#page-give-classes fieldset .delete-item-wrapper img {
-    height: 1.6rem;
 }
 
 #page-give-classes fieldset #delete-item {
@@ -143,10 +139,28 @@
         padding: 0 64px;
     }
 
+    #page-give-classes fieldset .input-block-delete #delete-item {
+        font: 16px;
+    }
+
     .schedule-item {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+        "select input1 input2";
         column-gap: 1.6rem;
+    }
+
+    #page-give-classes #schedule-items .select-block {
+        grid-area: select;
+    }
+
+    #page-give-classes #schedule-items .input-block .input1 {
+        grid-area: input1;
+    }
+
+    #page-give-classes #schedule-items .input-block .input2 {
+        grid-area: input2;
     }
 
     #page-give-classes #schedule-items .select-block+.input-block,
@@ -166,14 +180,5 @@
         width: 200px;
     }
     
-    #page-give-classes fieldset .delete-item-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 64;
-    }
-    #page-give-classes fieldset .delete-item-wrapper #delete-item {
-        font: 16px;
-    }
 }
 

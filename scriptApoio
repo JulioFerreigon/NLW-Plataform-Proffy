@@ -17,6 +17,7 @@ function cloneField() {
         //pegando o field do momento e limpando-o
         field.value = ""
         //repita até todos os fields estarem limpo
+      //  newfieldContainer.setAttribute('class', 'childrenOfSchedule-item')
     })
 //Coloque na página
     //onde ?
@@ -42,4 +43,14 @@ function cloneDelete() {
     document.querySelector("#schedule-items")
     //adicione um filho a ele
     .appendChild(newDeleteContainer) //adicionado como filho embaixo do ultimo filho do schedule-items
+    newDeleteContainer.setAttribute('onclick', 'deleteField')
+}
+
+function deleteField(event) {
+    const schedule = document.querySelectorAll(".schedule-item")
+    const scheduleItem = event.target.parentElement.parentElement
+
+    if(schedule.length !== 1) {
+        scheduleItem.remove()
+    }
 }
