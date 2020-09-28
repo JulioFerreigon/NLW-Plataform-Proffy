@@ -1,0 +1,26 @@
+{
+  "name": "NLW-Plataform-Proffy",
+  "version": "1.0.0",
+  "description": "Plataforma de Estudo Proffy NLW",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioFerreigon/NLW-Plataform-Proffy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioFerreigon/NLW-Plataform-Proffy/issues"
+  },
+  "homepage": "https://github.com/JulioFerreigon/NLW-Plataform-Proffy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
